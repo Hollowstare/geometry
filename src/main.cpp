@@ -3,7 +3,6 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-#include <unordered_set>
 
 using namespace std;
 
@@ -15,7 +14,6 @@ void enter()
     string mur;
 
     getline(cin, mur);
-    system("CLS");
     nya << mur;
 
     nya.close();
