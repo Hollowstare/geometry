@@ -1,5 +1,5 @@
-#include <string>
 #include <iostream>
+#include <string>
 using namespace std;
 #pragma once
 void lowerCase(string& str);
