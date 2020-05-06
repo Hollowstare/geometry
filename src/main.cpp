@@ -21,6 +21,7 @@ void enter()
 
 int main()
 {
+    cout << "Введите текст" << endl;
     enter();
     string testFile = "slava.txt";
     string dictFile = "knuth_words.txt";

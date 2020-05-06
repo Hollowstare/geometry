@@ -11,7 +11,8 @@ unordered_set<string> wordDict;
 string CreateWordList_SwapAdjChars(string word)
 {
     string result;
-    for (int i = 0; i < word.size() - 1; i++) {
+    int k = word.size() - 1;
+    for (int i = 0; i < k; i++) {
         string newWord = word;
         swap(newWord[i], newWord[i + 1]);
         if (wordDict.find(newWord) != wordDict.end()) {
@@ -24,7 +25,8 @@ string CreateWordList_SwapAdjChars(string word)
 string s(string word)
 {
     string result;
-    for (int i = 0; i < word.size(); ++i) {
+    int k = word.size();
+    for (int i = 0; i < k; ++i) {
         string newWord = word;
         newWord = newWord.erase(i, 1);
         if (wordDict.find(newWord) != wordDict.end()) {
